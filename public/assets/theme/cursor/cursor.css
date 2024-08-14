@@ -1,0 +1,92 @@
+
+
+body{
+    /* cursor: none !important */
+}
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #7bc9ff;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+}
+
+.cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid #8576ff;
+    border-radius: 50%;
+    opacity: .5;
+    top: -1px;
+    left: -1px;
+    animation: cursorAnim 2s infinite alternate;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1.5);
+    }
+    to {
+        transform: scale(.5);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+}
+
+
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 100px;
+    right: -50px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: none !important;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.scroll-label{
+    
+    display: inline-block;
+    transform: rotate(270deg);
+}
+#scrollToTopBtn:hover {
+    color : #8576FF;
+    font-weight: bolder;
+    
+}
+

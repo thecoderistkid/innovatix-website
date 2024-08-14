@@ -1,0 +1,273 @@
+/* nav{
+    padding: 20px !important
+} */
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    overflow-x: hidden !important;
+  
+}
+/* NAV */
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1020;
+}
+
+.bg-theme{
+    background: rgb(28,22,120);
+    background: linear-gradient(117deg, rgba(28,22,120,1) 0%, rgba(133,118,255,1) 66%, rgba(123,201,255,1) 100%);
+    color: white;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show , .nav-link:hover{
+    
+    background: linear-gradient(to right, #1C1678, #8576FF, #7BC9FF);
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.text-gradient{
+    background: linear-gradient(to right, #1C1678, #8576FF, #3B82F6);
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    background-clip: text;
+    color: transparent;
+}
+
+.bg-navbar{
+    background: rgb(255,255,255);
+    background: linear-gradient(121deg, rgba(255,255,255,1) 0%, rgba(242,244,255,1) 72%, rgba(243,237,255,1) 100%);
+}
+
+.bg-gradient-light{
+    background: rgb(255,255,255);
+    background: linear-gradient(121deg, rgba(255,255,255,1) 0%, rgba(242,244,255,1) 72%, rgba(243,237,255,1) 100%);
+}
+
+.hero{
+    /* border: solid 1px #ccc; */
+    min-height: 87vh;
+    background-image: url('/images/modern-bg.png');
+    background-size: cover;
+}
+
+.career-bg{
+    /* border: solid 1px #ccc; */
+    background-image: url('/images/modern-bg.png');
+    background-size: cover;
+}
+
+
+
+.section-border{
+    height: 100%;
+    border-left: solid 1px #8576FF;
+    opacity: .5;
+    position: absolute;
+    left: 30px;
+}
+
+section {
+    position: relative;
+}
+.section-title{
+    border-left: solid 3px #8576FF;
+    padding: 15px;
+    position:relative;
+    top: 30px;
+    left: 29px;
+    text-transform: uppercase;
+}
+
+
+.btn-hover {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 20px;
+    margin: 0px 3px 6px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    color: white;
+    z-index: 0;
+    border-radius: 0px !important;
+} 
+.btn-template::before {
+    position: absolute;
+    content: "";
+    background: rgb(28,22,120);
+    background: linear-gradient(117deg, rgba(28,22,120,1) 0%, rgba(133,118,255,1) 66%, rgba(123,201,255,1) 100%);
+    transition-duration: 0.3s;
+    z-index: -1;
+    inset: 0px auto auto 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    border-radius: 0px !important;
+} 
+
+.btn-template:hover::before {
+    width: 0px;
+    height: 100%;
+    opacity: 1;
+} 
+.btn-template:hover {
+    background: rgb(123,201,255);
+    background: linear-gradient(150deg, rgba(123,201,255,1) 0%, rgba(133,118,255,1) 100%);
+    color: white;
+    transition: color 0.5s ease 0s, background 0s ease 0s;
+    border: none;
+}
+.swiper-line {
+    width: 200px !important; /* Adjust as needed */
+    height: 2px !important;
+    background-color: #333;
+    margin: 10px;
+}
+
+.swiper-button-custom:hover {
+    background: linear-gradient(to right, #1C1678, #8576FF, #7BC9FF);
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+.text-justify {
+    text-align: justify;
+}
+.card-team{
+    background: rgb(255,255,255);
+    /* background: linear-gradient(121deg, rgba(255,255,255,1) 0%, rgba(242,244,255,1) 72%, rgba(243,237,255,1) 100%); */
+    border-radius: 0px;
+    border: none;
+}
+
+.card-team:hover{
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(70deg, #7BC9FF, #8576FF, #be8ec6);
+    opacity: .8;
+}
+.border-gradient {
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(70deg, #7BC9FF, #8576FF, #be8ec6);
+    opacity: .8;
+}
+.img-rounded{
+    border-radius: 50%;
+}
+
+.card-number{
+    position: absolute;
+    font-size: 8em;
+    opacity: 0.1;
+    right: 0;
+    top: -20px;
+}
+
+.border-gradient{
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(70deg, #7BC9FF, #8576FF, #be8ec6);
+    opacity: .8;
+
+}
+
+.product-swiper-slide{
+    width: 40%;
+}
+
+
+.text-service{
+    position: relative;
+    text-decoration: none;
+}
+  
+.text-service::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #1C1678, #8576FF, #7BC9FF);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+.text-service:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.img-bg {
+    position: relative;
+    top: 0;
+}
+
+.service-swiper-slide{
+  
+}
+
+.about-swiper {
+    width: 100%; 
+}
+.about-swiper-img {
+    height: 500px;
+}
+@media (max-width: 480px) {
+    .section-title{
+        display: none;
+    }
+    .card-number{
+        
+        font-size: 8em;
+    }
+    .section-border {
+        display: none;
+    }
+
+    .product-swiper-slide{
+        width: 70%;
+    }
+    .about-swiper {
+        width: 100%; 
+    }
+    .about-swiper-img {
+        height: 200px;
+    }
+    body{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        overflow-x: hidden !important;
+    }
+}
+
+.card-team  .card-footer{
+    border: none;
+    background: transparent;
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
